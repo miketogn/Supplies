@@ -34,8 +34,8 @@
                 <tr>
                     <th>Order Date</th>
                     <th>Location</th>
-                    <th>Product</th>
-                    <th>Quantity</th>
+                    <th class="hidden-xs hidden-sm">Product</th>
+                    <th class="hidden-xs hidden-sm">Quantity</th>
                     <th>Status</th>
                 </tr>
                 @foreach (var item in Model.Orders)
@@ -47,10 +47,10 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Location.LocationName)
                     </td>
-                    <td>
+                    <td class="hidden-xs hidden-sm">
                         @Html.DisplayFor(modelItem => item.Product.Name)
                     </td>
-                    <td>
+                    <td class="hidden-xs hidden-sm">
                         @Html.DisplayFor(modelItem => item.Quantity)
                     </td>
                     <td>
