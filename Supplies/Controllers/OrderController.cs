@@ -46,8 +46,7 @@ namespace Supplies.Controllers
         }
 
         // POST: Order/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "OrderID,OrderDate,Quantity,ProductID,LocationID,Status")] Order order)
@@ -82,8 +81,6 @@ namespace Supplies.Controllers
         }
 
         // POST: Order/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "OrderID,OrderDate,Quantity,ProductID,LocationID,Status")] Order order)

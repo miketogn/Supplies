@@ -8,7 +8,6 @@ namespace Supplies.Models
 {
     public class Product
     {
-        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProductID { get; set; }
         public string Name { get; set; }
 
